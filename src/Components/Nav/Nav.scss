@@ -1,0 +1,135 @@
+.nav__list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item {
+  & + & {
+    margin-top: 30px;
+  }
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: capitalize;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 20px;
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &[aria-label="home"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/home-outline.svg");
+    }
+  }
+
+  &[aria-label="explore"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/explore-outline.svg");
+    }
+  }
+
+  &[aria-label="notifications"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/notification-outline.svg");
+    }
+  }
+
+  &[aria-label="messages"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/messages-outline.svg");
+    }
+  }
+
+  &[aria-label="bookmarks"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/bookmarks-outline.svg");
+    }
+  }
+
+  &[aria-label="lists"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/lists-outline.svg");
+    }
+  }
+
+  &[aria-label="profile"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/profile-outline.svg");
+    }
+  }
+
+  &[aria-label="more"] {
+    &::before {
+      background-image: url("../../Assets/Images/Icons/more.svg");
+    }
+  }
+}
+
+.nav__item--active {
+  .nav__link {
+    font-weight: 700;
+
+    &[aria-label="home"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/home-fill.svg");
+      }
+    }
+
+    &[aria-label="explore"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/explore-fill.svg");
+      }
+    }
+
+    &[aria-label="notifications"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/notification-fill.svg");
+      }
+    }
+
+    &[aria-label="messages"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/messages-fill.svg");
+      }
+    }
+
+    &[aria-label="bookmarks"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/bookmarks-fill.svg");
+      }
+    }
+
+    &[aria-label="lists"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/lists-fill.svg");
+      }
+    }
+
+    &[aria-label="profile"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/profile-fill.svg");
+      }
+    }
+
+    &[aria-label="more"] {
+      &::before {
+        background-image: url("../../Assets/Images/Icons/more.svg");
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+#root {
+  width: 1620px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.App {
+  display: flex;
+}
+
+img {
+  display: block;
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 20px;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+
+section {
+  padding-left: 25px;
+  padding-right: 15px;
+  border-bottom: 1px solid #d8d8d8;
+}
