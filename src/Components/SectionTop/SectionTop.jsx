@@ -5,7 +5,7 @@ const SectionTop = ({ text }) => {
     <section className="section-top">
       <h2 className="section-top__heading">{text}</h2>
 
-      <button></button>
+      <button className="section-top__button" name="theme"></button>
     </section>
   );
 };
