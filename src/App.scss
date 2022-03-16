@@ -35,8 +35,8 @@ body {
 }
 
 #root {
-  width: 1620px;
-  height: 100%;
+  max-width: 1620px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   padding-bottom: 0;
@@ -45,7 +45,6 @@ body {
 
 .App {
   display: flex;
-  height: 100%;
 }
 
 img {

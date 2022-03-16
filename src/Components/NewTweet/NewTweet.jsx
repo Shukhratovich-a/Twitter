@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 
-import avatar from "../../Assets/Images/12345.jpg";
+import avatar from "../../Assets/Images/Avatars/12345.jpg";
 
 import "./NewTweet.scss";
 

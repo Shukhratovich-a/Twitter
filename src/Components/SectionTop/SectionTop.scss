@@ -14,13 +14,22 @@
 }
 
 .section-top__button {
+  box-sizing: content-box;
   width: 24px;
   height: 24px;
-  padding: 0;
+  margin: -10px 0;
+  padding: 10px;
   border: none;
   background-color: transparent;
   background-image: url("../../Assets/Images/Icons/theme.svg");
+  background-size: 24px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.25s ease;
+
+  &:hover {
+    background-color: #e7e7e8;
+  }
 }

@@ -1,0 +1,63 @@
+.trend {
+  padding: 15px;
+  transition: background-color 0.25s ease;
+
+  &:hover {
+    background-color: rgba($color: #e7e7e8, $alpha: 0.5);
+  }
+}
+
+.trend__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #393b41;
+}
+
+.trend__country {
+  margin-bottom: 2px;
+  opacity: 0.6;
+}
+
+.trend__name {
+  margin: 0;
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.trend__count {
+  margin-bottom: 3px;
+  opacity: 0.6;
+}
+
+.trend__button {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  margin-top: -10px;
+  margin-right: -10px;
+  padding: 10px;
+  color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.25s ease, background-color 0.25s ease;
+
+  &:hover {
+    background-color: rgba($color: #1d9bf0, $alpha: 0.1);
+    color: #1d9bf0;
+  }
+}

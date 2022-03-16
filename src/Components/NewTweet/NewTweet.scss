@@ -1,4 +1,4 @@
-.new-tweet{
+.new-tweet {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -30,48 +30,57 @@
   }
 }
 
-.new-tweet__list {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.new-tweet__bottom{
+.new-tweet__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 75px;
 }
 
+.new-tweet__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .new-tweet__item__button {
+  box-sizing: content-box;
   width: 24px;
   height: 24px;
-  padding: 0;
+  padding: 10px;
   border: none;
   outline: none;
   background-color: transparent;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.25s ease;
 
-  &[title='Media']{
-    background-image: url('../../Assets/Images/Icons/media.svg');
+  &:hover {
+    background-color: #e7e7e8;
   }
-  &[title='Gif']{
-    background-image: url('../../Assets/Images/Icons/gif.svg');
+
+  &[title="Media"] {
+    background-image: url("../../Assets/Images/Icons/media.svg");
   }
-  &[title='Stats']{
-    background-image: url('../../Assets/Images/Icons/stats.svg');
+  &[title="Gif"] {
+    background-image: url("../../Assets/Images/Icons/gif.svg");
   }
-  &[title='Emoji']{
-    background-image: url('../../Assets/Images/Icons/emoji.svg');
+  &[title="Stats"] {
+    background-image: url("../../Assets/Images/Icons/stats.svg");
   }
-  &[title='Schedule']{
-    background-image: url('../../Assets/Images/Icons/schedule.svg');
+  &[title="Emoji"] {
+    background-image: url("../../Assets/Images/Icons/emoji.svg");
+  }
+  &[title="Schedule"] {
+    background-image: url("../../Assets/Images/Icons/schedule.svg");
   }
 }
 
-.new-tweet__button{
+.new-tweet__button {
   width: 110px;
 }
