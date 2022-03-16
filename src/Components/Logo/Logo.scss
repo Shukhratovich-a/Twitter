@@ -1,5 +1,16 @@
-.logo{
-  display: block;
-  margin-bottom: 50px;
-  padding-top: 10px;
+.logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: #e7e7e8;
+  }
+}
+
+.logo__image {
+  box-sizing: content-box;
+  padding: 12.5px;
+  object-fit: contain;
 }

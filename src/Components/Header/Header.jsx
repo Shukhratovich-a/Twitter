@@ -9,7 +9,7 @@ const Header = () => {
     <div className="header">
       <Logo />
       <Nav />
-      <Button text={"Tweet"} />
+      <Button text={"Tweet"} classModifier={'header__button'} />
     </div>
   );
 };

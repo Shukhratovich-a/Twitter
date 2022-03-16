@@ -7,20 +7,34 @@
 
 .nav__item {
   & + & {
-    margin-top: 30px;
+    margin-top: 5px;
   }
 }
 
 .nav__link {
   display: flex;
-  align-items: center;
   text-decoration: none;
   color: inherit;
   font-weight: 600;
   line-height: 24px;
   text-transform: capitalize;
 
-  &::before {
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    padding-right: 20px;
+    border-radius: 25px;
+    transition: background-color 0.2s ease;
+  }
+
+  &:hover {
+    .nav__link__inner {
+      background-color: #e7e7e8;
+    }
+  }
+
+  &__inner::before {
     content: "";
     display: block;
     margin-right: 20px;
@@ -32,49 +46,49 @@
   }
 
   &[aria-label="home"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/home-outline.svg");
     }
   }
 
   &[aria-label="explore"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/explore-outline.svg");
     }
   }
 
   &[aria-label="notifications"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/notification-outline.svg");
     }
   }
 
   &[aria-label="messages"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/messages-outline.svg");
     }
   }
 
   &[aria-label="bookmarks"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/bookmarks-outline.svg");
     }
   }
 
   &[aria-label="lists"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/lists-outline.svg");
     }
   }
 
   &[aria-label="profile"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/profile-outline.svg");
     }
   }
 
   &[aria-label="more"] {
-    &::before {
+    .nav__link__inner::before {
       background-image: url("../../Assets/Images/Icons/more.svg");
     }
   }
@@ -85,49 +99,49 @@
     font-weight: 700;
 
     &[aria-label="home"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/home-fill.svg");
       }
     }
 
     &[aria-label="explore"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/explore-fill.svg");
       }
     }
 
     &[aria-label="notifications"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/notification-fill.svg");
       }
     }
 
     &[aria-label="messages"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/messages-fill.svg");
       }
     }
 
     &[aria-label="bookmarks"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/bookmarks-fill.svg");
       }
     }
 
     &[aria-label="lists"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/lists-fill.svg");
       }
     }
 
     &[aria-label="profile"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/profile-fill.svg");
       }
     }
 
     &[aria-label="more"] {
-      &::before {
+      .nav__link__inner::before {
         background-image: url("../../Assets/Images/Icons/more.svg");
       }
     }
