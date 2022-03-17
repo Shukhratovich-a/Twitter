@@ -5,16 +5,19 @@ import "./Footer.scss";
 const Footer = () => {
   const trends = [
     {
+      id: 0,
       country: "Germany",
       name: "Revalution",
       tweetsCount: "50.4K",
     },
     {
+      id: 1,
       country: "Poland",
       name: "The Big Bang Theory",
       tweetsCount: "100.9K",
     },
     {
+      id: 2,
       country: "Germany",
       name: "Revalution",
       tweetsCount: "50.4K",
@@ -23,12 +26,14 @@ const Footer = () => {
 
   const recomendations = [
     {
+      id: 0,
       name: "Mushtariy",
       userName: "@Mushtar565266",
       avatar: "",
     },
 
     {
+      id: 1,
       name: "Shuhratbek",
       userName: "@mrshukhrat",
       avatar: "",
@@ -55,7 +60,7 @@ const Footer = () => {
 
         <ul className="trends__list">
           {trends.map((trend) => (
-            <Trend trend={trend} />
+            <Trend key={trend.id} trend={trend} />
           ))}
         </ul>
 
@@ -67,7 +72,7 @@ const Footer = () => {
 
         <ul className="recommendations__list">
           {recomendations.map((recomendation) => (
-            <Recomendation recomendation={recomendation} />
+            <Recomendation key={recomendation.id} recomendation={recomendation} />
           ))}
         </ul>
 

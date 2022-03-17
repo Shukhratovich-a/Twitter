@@ -1,4 +1,5 @@
 import "./Recomendation.scss";
+import Nuetral from "../../Assets/Images/Icons/nuetral.svg";
 
 const Recomendation = ({ recomendation }) => {
   return (
@@ -6,10 +7,10 @@ const Recomendation = ({ recomendation }) => {
       <div className="recomendation__inner">
         <img
           className="recomendation__avatar"
-          src={recomendation.avatar || "https://via.placeholder.com/60"}
+          src={recomendation.avatar || Nuetral}
           alt={recomendation.name + "'s avatar"}
           width={60}
-          height60
+          height={60}
         />
         <div className="recomendation__info">
           <a className="recomendation__name" href="#link">

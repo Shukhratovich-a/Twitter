@@ -135,3 +135,9 @@
   padding: 0;
   list-style-type: none;
 }
+
+@media only screen and(max-width: 1300px) {
+  .footer__input{
+    width: 300px;
+  } 
+}

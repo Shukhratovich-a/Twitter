@@ -14,3 +14,9 @@
   padding: 12.5px;
   object-fit: contain;
 }
+
+@media only screen and(max-height: 700px) {
+  .logo{
+    margin-bottom: 10px;
+  }
+}

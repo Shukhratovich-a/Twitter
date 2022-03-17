@@ -1,0 +1,152 @@
+.tweet {
+  display: flex;
+  padding: 10px 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e7e8;
+}
+
+.tweet__inner {
+  flex-grow: 1;
+}
+
+.tweet__avatar {
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.tweet__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.tweet__top__left {
+  display: flex;
+  align-items: center;
+}
+
+.tweet__user-name {
+  margin: 0;
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.tweet__user-nick {
+  margin-right: 3px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.6;
+}
+
+.tweet__last-activity {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.6;
+
+  &::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    margin-right: 3px;
+    margin-top: 5px;
+    background-color: #000000;
+    border-radius: 50%;
+  }
+}
+
+.tweet__top__button {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-right: -10px;
+  padding: 10px;
+  color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.25s ease, background-color 0.25s ease;
+
+  &:hover {
+    background-color: rgba($color: #1d9bf0, $alpha: 0.1);
+    color: #1d9bf0;
+  }
+}
+
+.tweet__description {
+  max-width: 745px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tweet__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.tweet__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tweet__item {
+  & + & {
+    margin-left: 100px;
+  }
+}
+
+.tweet__item__button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 21px;
+  color: #536471;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  &--liked {
+    font-weight: 600;
+    color: #ef1c5c;
+  }
+
+  &--retweeted {
+    font-weight: 600;
+    color: #0cb345;
+  }
+}
+
+@media only screen and(max-width: 1400px) {
+  .tweet__item{
+    &+&{
+      margin-left: 50px;
+    }
+  }
+}

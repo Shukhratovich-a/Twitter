@@ -147,3 +147,33 @@
     }
   }
 }
+
+@media only screen and(max-width: 1300px) {
+  .nav__link__inner {
+    padding: 11px;
+
+    &::before {
+      margin: 0;
+    }
+
+    & > span {
+      display: none;
+    }
+  }
+}
+
+@media only screen and(max-height: 700px) {
+  .nav__list {
+    margin-bottom: 10px;
+  }
+
+  .nav__link {
+    &[aria-label="bookmarks"] {
+      display: none;
+    }
+
+    &[aria-label="lists"] {
+      display: none;
+    }
+  }
+}
